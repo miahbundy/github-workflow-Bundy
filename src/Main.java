@@ -57,6 +57,7 @@ public class Main {
         System.out.println(pt.buyAnimal(cat3));
 
         pt.showAvailablePets();
+        //this is just showing that you can't buy an animal that you've already bought/is not at the Store
         System.out.println(pt.buyAnimal(dog2));
 
 
