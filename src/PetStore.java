@@ -26,7 +26,7 @@ public class PetStore implements Store{
 
         else {
 
-            System.out.println("There are " + availablePets.size() + " pets available to buy. They are listed below: ");
+            System.out.println("There are " + availablePets.size() + " pets available to buy. All animals cost $10. They are listed below: ");
             for (int i = 0; i < availablePets.size(); i++) {
                 System.out.println(availablePets.get(i).getName());
             }
@@ -56,7 +56,7 @@ public class PetStore implements Store{
                 if (availablePets.get(i).name.equals(pet.name)){
                     availablePets.remove(i);
                     found = true;
-                    purchaseNote = "You have purchased " + pet.name;
+                    purchaseNote = "You have purchased " + pet.name + " for $" + pet.price;
                     break;} }
         }
 

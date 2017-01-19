@@ -4,8 +4,10 @@
  */
 public class Animal {
     public String name= "";
+    public int price = 10;
 
     public Animal(String name){
+
         setName(name);
     }
 
@@ -15,7 +17,12 @@ public class Animal {
     }
 
     public String getName() {
+
         return name;
+    }
+
+    public int getPrice(){
+        return price;
     }
 
     public void speak() {
